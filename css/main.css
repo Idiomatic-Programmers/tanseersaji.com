@@ -1,15 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
 :root {
-  --primary: #002bfd;
-  --accent: #e71d36;
-  --light: #f6f6f6;
-  --dark: #232946;
+  --primary: #6246ea;
+  --accent: #d11818;
+  --light: #fffffe;
+  --dark: #2b2c34;
 
-  --primary-shadow: #0026e2;
-  --light-shadow: #232946;
+  --primary-shadow: #5a40df;
+  --light-shadow: #2b2c34;
 
-  --primary-translucent: #002afd2f;
-  --accent-translucent: #e71d35ee;
+  --primary-translucent: #f7f8ff;
+  --accent-translucent: #df2b2b;
 }
 
 body,
@@ -17,7 +18,7 @@ html {
   margin: 0px;
   padding: 0px;
   font-size: 1rem;
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   background: var(--light);
   color: var(--dark);
   font-weight: 400;
@@ -139,6 +140,7 @@ header h1.name {
 
 header p.description {
   font-size: 0.9rem;
+  padding-left: 4px;
 }
 
 header .ctas {
@@ -154,7 +156,7 @@ h2.heading {
 .banner {
   width: 100vw;
   height: auto;
-  padding: 21px 0px;
+  padding: 31px 0px;
   background: var(--primary-translucent);
   margin-bottom: 25px;
 }
@@ -162,17 +164,19 @@ h2.heading {
 ul.skills {
   list-style: none;
   margin: 5px 0px;
+  margin-top: 15px;
+
   padding: 0px;
   display: flex;
 }
 
 ul.skills li {
-  padding: 4px 9px;
+  padding: 6px 13px;
   margin: 0px 4px;
   border-radius: 3px;
   background: var(--accent-translucent);
   color: var(--light);
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   letter-spacing: 1px;
   box-shadow: 3px 3px 5px -3px rgba(0, 0, 0, 0.4);
 }
