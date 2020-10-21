@@ -89,6 +89,7 @@ nav .menu ul li a:hover {
   font-size: 0.8rem;
   letter-spacing: 1px;
   transition: all 300ms ease-in-out;
+  width: max-content;
 }
 
 .btn-primary {
@@ -115,7 +116,8 @@ nav .menu ul li a:hover {
 
 header {
   width: 100vw;
-  height: 50vh;
+  min-height: 50vh;
+  height: auto;
   display: flex;
   align-items: center;
 }
@@ -165,18 +167,86 @@ ul.skills {
   list-style: none;
   margin: 5px 0px;
   margin-top: 15px;
-
   padding: 0px;
   display: flex;
+  flex-wrap: wrap;
 }
 
 ul.skills li {
   padding: 6px 13px;
-  margin: 0px 4px;
+  margin: 4px;
   border-radius: 3px;
   background: var(--accent-translucent);
   color: var(--light);
   font-size: 0.8rem;
   letter-spacing: 1px;
   box-shadow: 3px 3px 5px -3px rgba(0, 0, 0, 0.4);
+}
+
+.experience_holder {
+  width: 48%;
+  margin: 11px 0px;
+}
+
+.experience_holder:nth-child(2n-1) {
+  margin-right: 2%;
+}
+
+.experience_holder span.period,
+.experience_holder .card p.location {
+  font-size: 0.83rem;
+}
+
+.experience_holder .card {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  padding: 23px;
+  margin: 9px 0px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 3px 3px 13px -3px rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+}
+
+.experience_holder .card h3 {
+  margin: 0px;
+  padding: 7px 0px;
+  padding-top: 0px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+p.description {
+  font-size: 0.9rem;
+  line-height: 20px;
+}
+
+.line-3 {
+  height: 80px;
+  overflow: hidden;
+}
+
+@media (max-width: 576px) {
+  .container {
+    width: 90vw;
+  }
+
+  header {
+    padding: 31px 0px;
+  }
+
+  header h1.name {
+    font-size: 2.8rem;
+  }
+
+  .experience_holder {
+    width: 100%;
+  }
+
+  .experience_holder:nth-child(2n-1) {
+    margin-right: 0px;
+  }
 }
