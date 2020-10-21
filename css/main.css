@@ -95,6 +95,7 @@ nav .menu ul li a:hover {
 .btn {
   padding: 5px 17px;
   border-radius: 3px;
+  margin-right: 7px;
   box-shadow: 3px 3px 5px -3px rgba(0, 0, 0, 0.3);
   text-transform: uppercase;
   font-size: 0.8rem;
