@@ -22,6 +22,7 @@ html {
   background: var(--light);
   color: var(--dark);
   font-weight: 400;
+  overflow-x: hidden;
 }
 
 .container {
@@ -60,6 +61,16 @@ nav .menu ul {
   width: 100%;
   display: flex;
   justify-content: flex-end;
+}
+
+footer nav .menu ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 nav .menu ul li {
@@ -114,7 +125,8 @@ nav .menu ul li a:hover {
   color: var(--light);
 }
 
-header {
+header,
+section#contact {
   width: 100vw;
   min-height: 50vh;
   height: auto;
@@ -183,6 +195,21 @@ ul.skills li {
   box-shadow: 3px 3px 5px -3px rgba(0, 0, 0, 0.4);
 }
 
+ul.skills li.lang {
+  background: var(--primary);
+  color: var(--light);
+}
+
+ul.skills li.library {
+  background: var(--accent-translucent);
+  color: var(--light);
+}
+
+ul.skills li.tool {
+  background: var(--dark);
+  color: var(--light);
+}
+
 .experience_holder {
   width: 48%;
   margin: 11px 0px;
@@ -228,6 +255,24 @@ p.description {
   height: 80px;
   overflow: hidden;
 }
+section#contact form {
+  display: flex;
+  flex-direction: column;
+  padding: 20%;
+}
+
+section#contact form label {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: 17px;
+  margin-bottom: 7px;
+}
+
+section#contact form input,
+section#contact form textarea {
+  padding: 13px;
+}
 
 @media (max-width: 576px) {
   .container {
@@ -248,5 +293,8 @@ p.description {
 
   .experience_holder:nth-child(2n-1) {
     margin-right: 0px;
+  }
+  section#contact form {
+    padding: 0px;
   }
 }

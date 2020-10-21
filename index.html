@@ -38,7 +38,7 @@
             <h1 class="name">Tanseer Saji</h1>
             <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius maiores dolorum animi molestiae officia fugit ullam sunt sit minus, soluta distinctio saepe perspiciatis, quasi consequuntur? Odit dolor asperiores possimus dolorum.</p>
             <div class="ctas">
-                <a href="#" class="btn btn-primary">Resume</a>
+                <a href="#resume" class="btn btn-primary">Resume</a>
                 <a 
                  target="_blank"
                  href="https://www.linkedin.com/in/tanseersaji/"
@@ -54,11 +54,19 @@
         <div class="container">
             <h2 class="heading">Skills</h2>
             <ul class="skills">
-                <li>Python</li>
-                <li>Keras/Tensorflow</li>
-                <li>Pandas</li>
-                <li>Django</li>
-                <li>Nuxt.js</li>
+                <li class="lang">Python</li>
+                <li class="lang">Javascript</li>
+                <li class="library">Keras/Tensorflow</li>
+                <li class="library">Pandas</li>
+                <li class="library">Django</li>
+                <li class="library">Nuxt.js</li>
+                <li class="library">Socket.IO</li>
+                <li class="tool">Google Cloud Platforms</li>
+                <li class="tool">Rest API</li>
+                <li class="tool">Git</li>
+                <li class="tool">Linux</li>
+                <li class="tool">NGINX</li>
+                <li class="tool">ORM</li>
             </ul>
         </div>
         
@@ -153,10 +161,10 @@
                             Experience Smarter platform is a generative engine to create a one-of-a-kind sleeve for Lenovo's Yoga series laptops using GAN and WebGL.
                         </p>
                         <ul class="skills">
-                            <li>Python</li>
-                            <li>Keras</li>
-                            <li>Django</li>
-                            <li>WebGL</li>
+                            <li class="lang">Python</li>
+                            <li class="library">Keras</li>
+                            <li class="library">Django</li>
+                            <li class="tool">WebGL</li>
                         </ul>
                         <a href="https://dnflabs.com/project/21/" style="margin-top: 9px;" target="_blank" class="btn btn-secondary">
                             Read Case Study
@@ -172,13 +180,32 @@
                             I, along with a team of 5, developed a variety of solutions that aided the event organizers to get a clear insight into a candidates' mental ability and also analyse the crowd movement using an array of CCTV Cameras. 
                         </p>
                         <ul class="skills">
-                            <li>Python</li>
-                            <li>Javascript</li>
-                            <li>Keras</li>
-                            <li>Django</li>
-                            <li>Chart.js</li>
+                            <li class="lang">Python</li>
+                            <li class="lang">Javascript</li>
+                            <li class="library">Keras</li>
+                            <li class="library">Django</li>
+                            <li class="library">Chart.js</li>
                         </ul>
                         <a href="https://dnflabs.com/project/22/" style="margin-top: 9px;" target="_blank" class="btn btn-secondary">
+                            Read Case Study
+                        </a>
+                    </div>
+                </div>
+                <div class="experience_holder">
+                    <span class="period">Company: DNF Labs</span>
+                    <div class="card">
+                        <h3 class="company">HW Water</h3>
+                        <p class="description">
+                            HW Water is a handheld device that can measure Water Quality along with an estimated percentage of minerals and chemical properties in a given water sample.
+                        </p>
+                        <ul class="skills">
+                            <li class="lang">Python</li>
+                            <li class="lang">Javascript</li>
+                            <li class="library">Flask</li>
+                            <li class="library">Keras</li>
+                            <li class="tool">Regression</li>
+                        </ul>
+                        <a href="https://dnflabs.com/project/30/" style="margin-top: 9px;" target="_blank" class="btn btn-secondary">
                             Read Case Study
                         </a>
                     </div>
@@ -191,34 +218,16 @@
                             I designed and developed the company website for DNF Labs.
                         </p>
                         <ul class="skills">
-                            <li>Python</li>
-                            <li>Javascript</li>
-                            <li>Django</li>
+                            <li class="lang">Python</li>
+                            <li class="lang">Javascript</li>
+                            <li class="library">Django</li>
                         </ul>
                         <a href="https://dnflabs.com" style="margin-top: 9px;" target="_blank" class="btn btn-secondary">
                             Visit Site
                         </a>
                     </div>
                 </div>
-                <div class="experience_holder">
-                    <span class="period">Company: DNF Labs</span>
-                    <div class="card">
-                        <h3 class="company">HW Water</h3>
-                        <p class="description">
-                            HW Water is a handheld device that can measure Water Quality along with an estimated percentage of minerals and chemical properties in a given water sample.
-                        </p>
-                        <ul class="skills">
-                            <li>Python</li>
-                            <li>Javascript</li>
-                            <li>Flask</li>
-                            <li>Keras</li>
-                            <li>Regression</li>
-                        </ul>
-                        <a href="https://dnflabs.com/project/30/" style="margin-top: 9px;" target="_blank" class="btn btn-secondary">
-                            Read Case Study
-                        </a>
-                    </div>
-                </div>
+                
             </div>
         </div>
     </section>
@@ -254,9 +263,59 @@
         </div>
     </section>
     <section id="contact">
-
+        <div class="container">
+            <form name="contact" method="POST" data-netlify="true">
+                <h2 class="heading">Contact Me</h2>
+                <label>Name:</label>   
+                <input type="text" name="name" required minlength="3" />
+                <label>Email:</label>
+                <input type="email" name="email" required />
+                <label>Message:</label>
+                <textarea name="message" rows="7" required minlength="20"></textarea>
+            
+                <button style="margin-top: 13px;" class="btn btn-secondary" type="submit">Send</button>   
+            </form>
+        </div>
     </section>
 
+    <br>
+
+    <footer class="banner" style="margin-bottom: 0px;">
+        <nav>
+            <div class="container">
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <a 
+                            target="_blank"
+                            href="https://idiomaticprogrammers.com/">
+                                Blog
+                            </a>        
+                        </li>
+                        <li>
+                            <a href="#projects">Projects</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
+                        <li>
+                            <a href="mailto://tanseersaji@gmail.com">Email</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/tanseersaji">Github</a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/tanseersaji/">LinkedIn</a>
+                        </li>
+                        <li>
+                            <a href="#resume">Resume</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    
+        </nav>
+    </footer>
     <script src="js/main.js"></script>
 
 </body>
