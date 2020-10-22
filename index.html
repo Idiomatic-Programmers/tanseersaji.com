@@ -287,7 +287,8 @@
     </section>
     <section id="contact">
         <div class="container">
-            <form name="contact" method="POST" data-netlify="true">
+            <form name="contact" method="POST" data-netlify="true" netlify-honeypot="required">
+                <input name="required" type="hidden"/>
                 <h2 class="heading">Contact Me</h2>
                 <label for="name">Name:</label>   
                 <input id="name" type="text" name="name" required minlength="3" />
