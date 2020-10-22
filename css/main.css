@@ -129,10 +129,14 @@ nav .menu ul li a:hover {
 header,
 section#contact {
   width: 100vw;
-  min-height: 50vh;
+  min-height: 60vh;
   height: auto;
   display: flex;
   align-items: center;
+}
+
+section#contact {
+  min-height: 40vh;
 }
 
 h1,
@@ -141,21 +145,15 @@ p {
   margin: 5px 0px;
 }
 
-header p.greetings {
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 0.8rem;
-  letter-spacing: 0.1rem;
-  padding-right: 30px;
-}
-
 header h1.name {
   font-size: 3.1415rem;
 }
 
 header p.description {
-  font-size: 0.9rem;
+  font-size: 1.05rem;
   padding-left: 4px;
+  line-height: 25px;
+  width: 70%;
 }
 
 header .ctas {
@@ -259,7 +257,7 @@ p.description {
 section#contact form {
   display: flex;
   flex-direction: column;
-  padding: 20%;
+  padding: 69px 20%;
 }
 
 section#contact form label {
@@ -297,5 +295,9 @@ section#contact form textarea {
   }
   section#contact form {
     padding: 0px;
+  }
+
+  header p.description {
+    width: 100%;
   }
 }
