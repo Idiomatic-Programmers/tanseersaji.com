@@ -61,16 +61,6 @@ nav .menu ul {
   justify-content: flex-end;
 }
 
-footer nav .menu ul {
-  list-style: none;
-  margin: 0px;
-  padding: 0px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
 nav .menu ul li {
   padding: 7px 9px;
   font-size: 0.85rem;
